@@ -19,7 +19,7 @@ def find_all_users_id(data: dict)->list:
                 users_id.append(user["from_id"])
 
         
-    print((users_id))
+    print(list(set(users_id)))
 
 data = read_data("data/result.json")
 find_all_users_id(data)
